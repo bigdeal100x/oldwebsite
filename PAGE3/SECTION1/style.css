@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+	background-color: black;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#link1 {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+border-right: 5px solid rgba(0, 0, 0, 0);
+}
+
+#link2 {
+    background-color: white;
+    width: 200px;
+    color: rgba(0, 0, 0, 0)
+}
+
+#link3 {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+}
+
+#sidebar {
+    position: fixed;
+    color: rgba(0, 0, 0, 0);
+    top: 44%;
+    left: 0;
+    z-index: 2;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), white);
+    user-select: none;
+    height: 150px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sidebar a {
+    display: flex;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: black;
+    font-family: "balboa-extra-condensed", sans-serif;
+}
+
+#s1,
+#s2, #s3 {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+#button,
+#button2, #button3 {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    white-space: pre;
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 0;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+    #button {
+        background-image: url(../SECTION1/images/s1.jpg);
+        background-size: cover;
+    }
+        
+        #button2 {
+        background-image: url(../SECTION1/images/s2.jpg);
+        background-size: cover;
+}
+        
+        #button3 {
+        background-image: url(../SECTION1/images/s3.jpg);
+        background-size: cover;
+        }
+
+.flex {
+    display: flex;
+}
+.box {
+    opacity: 0;
+    top: 0;
+width: 100%;
+}
+
+.box2 {
+    opacity: 0;
+ width: 100%;  
+}
+
+.box3 {
+    opacity: 0;
+    top: 0;
+width: 100%;
+}
+
+#img-box {
+    width: 100%;
+    height: 100vh;
+}
+#img-box2 {
+    width: 100%;
+    height: 100vh;
+}
+ 
+#img-box3 {
+    width: 100%;
+    height: 100vh;
+}
+
+audio {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+}
+
+/* transition */
+
+.transform{
+    transition: all 10s linear;
+  }
+
+  .transform-active{
+    opacity: 1;
+  }
+
+  .transform2{
+    transition: all 10s linear;
+  }
+
+  .transform2-active{
+    opacity: 1;
+  }
+
+  .transform3{
+    transition: all 10s linear;
+  }
+
+  .transform3-active{
+    opacity: 1;
+  }
+
+  /*              */
+
+
+
+
+footer {
+    z-index: 1;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 2px;
+}
+
+footer p {
+	color: white;
+    margin: 0;
+    text-align: center;
+}

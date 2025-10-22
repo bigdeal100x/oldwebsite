@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: 1px solid white;
+}
+
+#link1 {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+border-right: 5px solid black;
+}
+
+#link2 {
+    background-color: white;
+    width: 200px;
+    color: rgba(0, 0, 0, 0)
+}
+
+#link3 {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+    border-left: 5px solid black;
+}
+
+/* .container {
+    right: 0;
+    user-select: none;
+    height: 100vh;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 2;
+    position: fixed;
+}
+
+.container:hover .overlay {
+    width: 50px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+} */
+
+
+#sidebar {
+    position: fixed;
+    color: rgba(0, 0, 0, 0);
+    top: 44%;
+    right: 0;
+    z-index: 2;
+    background-image: linear-gradient(to right, black, white);
+    user-select: none;
+    height: 150px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sidebar a {
+    display: flex;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: black;
+    font-family: "balboa-extra-condensed", sans-serif;
+}
+
+#s1,
+#s2, #s3 {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+#s1 {
+font-size: 30px;
+text-align: center;
+}
+
+#s1 {
+    background-image: url(../SECTION1/images/s1.jpg);
+    background-size: cover;
+    transform: rotate(90deg)}
+    
+    #s2 {
+    background-image: url(../SECTION1/images/s2.jpg);
+    background-size: cover;}
+    
+    #s3 {
+    background-image: url(../SECTION1/images/s3.jpg);
+    background-size: cover;
+    }
+
+
+
+#front {
+    left: 0%;
+    position: fixed;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+}
+
+#back {
+    left: 0%;
+    height: 100vh;
+}
+
+footer {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 2px;
+}
+
+footer p {
+	color: white;
+    margin: 0;
+    padding-left: 1em;
+}
+
+footer img {
+    padding-right: 1em;
+    height: 16px;
+}

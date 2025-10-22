@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../SECTION1/images/bg.jpg);
+    margin: 0%;
+}
+
+nav {
+    background-image: url(../SECTION1/images/bg.jpg);
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: 1px solid black;
+}
+
+#link1 {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+    border-right: 5px solid white;
+}
+
+#link2 {
+    background-color: black;
+    width: 200px;
+    color: rgba(0, 0, 0, 0)
+}
+
+#link3 {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,1));
+    width: 200px;
+    color: rgba(0, 0, 0, 0);
+    border-left: 5px solid white;
+}
+
+/* .container {
+    right: 0;
+    user-select: none;
+    height: 100vh;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 2;
+    position: fixed;
+}
+
+.container:hover .overlay {
+    width: 50px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+} */
+
+#sidebar {
+    position: fixed;
+    color: rgba(0, 0, 0, 0);
+    top: 44%;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, black, white);
+    user-select: none;
+    height: 150px;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sidebar a {
+    display: flex;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: black;
+    font-family: "bebas-neue", sans-serif;
+}
+
+#s1,
+#s2 {
+    background-color: white;
+    width: 50px;
+    height: 30px;
+}
+
+#s1 {
+    background-image: url(../SECTION1/images/info.jpg);
+    background-size: contain;
+}
+
+.stickme {
+    position: sticky;
+    top: 0;
+  }
+
+#text {
+    font-size: 75px;
+    text-align: center;
+}
+
+
+#foreground {
+    left: 0;
+    position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    #text {
+        font-size: 50px;
+    }
+
+    #foreground {
+        right: 0;
+        position: fixed;
+        transform: rotate(90deg);
+    }
+  }
+
+
+article p {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../SECTION1/images/bg.jpg);
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 2px;
+}
+
+footer p {
+    margin: 0;
+    padding-left: 1em;
+}
+
+footer img {
+    padding-right: 1em;
+    height: 16px;
+}

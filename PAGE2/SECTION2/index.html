@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Section 2</title>
+  <link rel="stylesheet" href="../SECTION2/style.css">
+</head>
+
+<body>
+  <nav class="stickme">
+    <a href="../SECTION1/index.html" id="link1">Page 1</a>
+    <a href="../../PAGE2/SECTION1/index.html" id="link2">Page 2</a>
+    <a href="../../PAGE3/SECTION1/" id="link3">Page 3</a>
+  </nav>
+  <div class="container"><div class="overlay" id="sidebar">
+    <a href="../SECTION1/index.html"><div id="s1"> </div></a>
+    <a href="../SECTION2/index.html"><div id="s2"> </div></a>
+    <a href="../SECTION3/index.html"><div id="s3"> </div></a>
+</div></div>
+<img src="../SECTION2/images/frame.png">
+  <div id="container">
+    <video autoplay="true" id="videoElement">
+
+    </video>
+  </div>
+  <script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+  </script>
+  <footer>
+    <p>Estelle Handy.</p>
+  </footer>
+</body>
+
+</html>
